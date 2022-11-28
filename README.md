@@ -8,7 +8,7 @@ Para utilizar ele é simples, somente baixe o projeto e compile para seu celular
 
 Tela inicial:
 
-![Tela inicial do app](Images/telaInicial.png)
+![Tela inicial do app](images/telaInicial.png)
 
 ---
 
