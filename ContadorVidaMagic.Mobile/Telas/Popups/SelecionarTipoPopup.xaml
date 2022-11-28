@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage
+    x:Class="ContadorVidaMagic.Mobile.Telas.Popups.SelecionarTipoPopup"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:animations="clr-namespace:Mopups.Animations;assembly=Mopups"
+    xmlns:pages="clr-namespace:Mopups.Pages;assembly=Mopups"
+    Title="SelecionarTipoPopup"
+    BackgroundColor="#80000000"
+    CloseWhenBackgroundIsClicked="False">
+
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation
+            DurationIn="400"
+            DurationOut="300"
+            EasingIn="SinOut"
+            EasingOut="SinIn"
+            HasBackgroundAnimation="True"
+            PositionIn="Center"
+            PositionOut="Center"
+            ScaleIn="1.2"
+            ScaleOut="0.8" />
+    </pages:PopupPage.Animation>
+
+    <Grid
+        x:Name="selecionarCores"
+        ColumnDefinitions="*,*,*"
+        HorizontalOptions="Center"
+        RowDefinitions="*,*"
+        VerticalOptions="Center">
+        <Frame
+            Grid.Row="0"
+            Grid.Column="0"
+            Padding="0"
+            BackgroundColor="#ffffd4"
+            BorderColor="Transparent"
+            CornerRadius="50">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="CorBrancoSelecionado" />
+            </Frame.GestureRecognizers>
+            <Image Source="icone_terreno_branco" WidthRequest="100" />
+        </Frame>
+        <Frame
+            Grid.Row="0"
+            Grid.Column="1"
+            Padding="0"
+            BackgroundColor="#848484"
+            BorderColor="Transparent"
+            CornerRadius="50">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="CorPretoSelecionado" />
+            </Frame.GestureRecognizers>
+            <Image Source="icone_terreno_preto" WidthRequest="100" />
+        </Frame>
+        <Frame
+            Grid.Row="0"
+            Grid.Column="2"
+            Padding="0"
+            BackgroundColor="#27b56b"
+            BorderColor="Transparent"
+            CornerRadius="50">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="CorVerdeSelecionado" />
+            </Frame.GestureRecognizers>
+            <Image Source="icone_terreno_verde" WidthRequest="100" />
+        </Frame>
+        <Frame
+            Grid.Row="1"
+            Grid.Column="0"
+            Padding="0"
+            BackgroundColor="#66c0f4"
+            BorderColor="Transparent"
+            CornerRadius="50">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="CorAzulSelecionado" />
+            </Frame.GestureRecognizers>
+            <Image Source="icone_terreno_azul" WidthRequest="100" />
+        </Frame>
+        <Frame
+            Grid.Row="1"
+            Grid.Column="1"
+            Padding="0"
+            BackgroundColor="#fa5454"
+            BorderColor="Transparent"
+            CornerRadius="50">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="CorVermelhoSelecionado" />
+            </Frame.GestureRecognizers>
+            <Image Source="icone_terreno_vermelho" WidthRequest="100" />
+        </Frame>
+    </Grid>
+
+</pages:PopupPage>

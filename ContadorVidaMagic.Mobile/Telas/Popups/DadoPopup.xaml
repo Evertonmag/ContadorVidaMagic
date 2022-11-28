@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage
+    x:Class="ContadorVidaMagic.Mobile.Telas.Popups.DadoPopup"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:animations="clr-namespace:Mopups.Animations;assembly=Mopups"
+    xmlns:pages="clr-namespace:Mopups.Pages;assembly=Mopups"
+    Title="DadoPopup"
+    BackgroundColor="#80000000"
+    CloseWhenBackgroundIsClicked="False">
+
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation
+            DurationIn="400"
+            DurationOut="300"
+            EasingIn="SinOut"
+            EasingOut="SinIn"
+            HasBackgroundAnimation="True"
+            PositionIn="Center"
+            PositionOut="Center"
+            ScaleIn="1.2"
+            ScaleOut="0.8" />
+    </pages:PopupPage.Animation>
+
+    <Grid
+        Margin="0,0,0,45"
+        ColumnDefinitions="*"
+        RowDefinitions="0.7*,*,2*,*,2*,*,0.5*">
+        <Label
+            x:Name="lblValorDado2"
+            Grid.Row="1"
+            Grid.Column="0"
+            FontSize="48"
+            HorizontalOptions="Center"
+            IsVisible="false"
+            Rotation="180"
+            TextColor="#FFF"
+            VerticalOptions="Center" />
+        <Image
+            x:Name="imageDado2"
+            Grid.Row="2"
+            Grid.Column="0"
+            Rotation="180"
+            WidthRequest="150" />
+
+        <Image
+            x:Name="imageDado1"
+            Grid.Row="4"
+            Grid.Column="0"
+            WidthRequest="150" />
+
+        <Label
+            x:Name="lblValorDado1"
+            Grid.Row="5"
+            Grid.Column="0"
+            FontSize="48"
+            HorizontalOptions="Center"
+            IsVisible="false"
+            TextColor="#FFF"
+            VerticalOptions="Center" />
+    </Grid>
+</pages:PopupPage>

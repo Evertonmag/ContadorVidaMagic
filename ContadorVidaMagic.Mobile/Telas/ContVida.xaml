@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="ContadorVidaMagic.Mobile.Telas.ContVida"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="ContVida">
+
+    <Grid ColumnDefinitions="*" RowDefinitions="2*,0.3*,2*">
+        <Grid
+            Grid.Row="0"
+            Grid.Column="0"
+            ColumnDefinitions="*,2*,*"
+            Rotation="180"
+            RowDefinitions="*,4*,*">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop x:Name="Player2Color1" Offset="0.1" Color="#f3f5f2" />
+                    <GradientStop x:Name="Player2Color2" Offset="0.4" Color="#e3d1b3" />
+                    <GradientStop x:Name="Player2Color3" Offset="1.5" Color="#dbb177" />
+                </LinearGradientBrush>
+            </Grid.Background>
+
+            <Label
+                x:Name="MensagemRIP2"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Margin="20,0,0,0"
+                FontSize="Title"
+                IsVisible="false"
+                Text="RIP!"
+                TextColor="Black" />
+
+            <Frame
+                Grid.Row="0"
+                Grid.Column="2"
+                Padding="0"
+                BackgroundColor="Transparent"
+                BorderColor="Transparent"
+                CornerRadius="100"
+                HeightRequest="50"
+                RotationY="10"
+                WidthRequest="50">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="BtnSelecionarTipo2" />
+                </Frame.GestureRecognizers>
+                <Image x:Name="SelecionarTipoImg2" Source="selecionar_tipodark" />
+            </Frame>
+
+            <ImageButton
+                x:Name="btnAdicionar2"
+                Grid.Row="1"
+                Grid.Column="0"
+                BackgroundColor="Transparent"
+                Clicked="BtnAdicionar2"
+                HeightRequest="75"
+                Source="icone_adicionar_black"
+                VerticalOptions="Center"
+                WidthRequest="75" />
+
+            <Label
+                x:Name="Contador2"
+                Grid.Row="1"
+                Grid.Column="1"
+                FontAttributes="Bold"
+                FontSize="70"
+                HorizontalTextAlignment="Center"
+                Text="20"
+                VerticalTextAlignment="Center" />
+
+            <ImageButton
+                x:Name="btnDiminuir2"
+                Grid.Row="1"
+                Grid.Column="2"
+                BackgroundColor="Transparent"
+                Clicked="BtnRemover2"
+                HeightRequest="75"
+                Source="icone_reduzir_black"
+                VerticalOptions="Center"
+                WidthRequest="75" />
+
+            <Grid
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                ColumnDefinitions="*,*,*,*,*"
+                RowDefinitions="*">
+
+                <Frame
+                    x:Name="FrameCoracao2"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Padding="0"
+                    BackgroundColor="Transparent"
+                    BorderColor="Black">
+                    <ImageButton
+                        x:Name="Coracao2"
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Clicked="BtnAcionarVida2"
+                        Source="heart_black"
+                        WidthRequest="35" />
+                </Frame>
+                <Frame
+                    x:Name="FrameVeneno2"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Padding="0"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent">
+                    <ImageButton
+                        x:Name="veneno2"
+                        Grid.Row="0"
+                        Grid.Column="1"
+                        Clicked="BtnAcionarVeneno2"
+                        Source="veneno_black"
+                        WidthRequest="50" />
+                </Frame>
+                <Frame
+                    x:Name="FrameRaio2"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Padding="0"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent">
+                    <ImageButton
+                        x:Name="Raio2"
+                        Grid.Row="0"
+                        Grid.Column="2"
+                        Clicked="BtnacionarEnergy2"
+                        Source="lightning_black"
+                        WidthRequest="25" />
+                </Frame>
+                <Frame
+                    x:Name="FrameCommander2"
+                    Grid.Row="0"
+                    Grid.Column="3"
+                    Padding="0"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent">
+                    <ImageButton
+                        x:Name="Commander2"
+                        Grid.Row="0"
+                        Grid.Column="3"
+                        Clicked="BtnAcionarCommander2"
+                        Source="commander_black"
+                        WidthRequest="45" />
+                </Frame>
+                <Frame
+                    x:Name="FramePlanesWalker2"
+                    Grid.Row="0"
+                    Grid.Column="4"
+                    Padding="0"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent">
+                    <ImageButton
+                        x:Name="PlanesWalker2"
+                        Grid.Row="0"
+                        Grid.Column="4"
+                        Clicked="BtnAcionarPlanesWalker2"
+                        Source="planeswalker_black"
+                        WidthRequest="55" />
+                </Frame>
+            </Grid>
+
+        </Grid>
+
+        <Grid
+            Grid.Row="1"
+            Grid.Column="0"
+            BackgroundColor="Black"
+            ColumnDefinitions="*,*,*,*">
+            <ImageButton
+                Grid.Row="0"
+                Grid.Column="0"
+                Clicked="BtnReiniciar"
+                Source="rotate"
+                WidthRequest="30" />
+            <ImageButton
+                Grid.Row="0"
+                Grid.Column="1"
+                Clicked="BtnGirarDado"
+                Source="dado"
+                WidthRequest="30" />
+            <ImageButton
+                Grid.Row="0"
+                Grid.Column="2"
+                Clicked="BtnSelecionarPlayers"
+                Source="users"
+                WidthRequest="30" />
+            <ImageButton
+                Grid.Row="0"
+                Grid.Column="3"
+                Clicked="BtnConfiguracoes"
+                Source="gear"
+                WidthRequest="30" />
+        </Grid>
+
+        <Grid
+            Grid.Row="2"
+            Grid.Column="0"
+            ColumnDefinitions="*,2*,*"
+            RowDefinitions="0.5*,5*,1.5*">
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0,1">
+                    <GradientStop x:Name="Player1Color1" Offset="0.1" Color="#716974" />
+                    <GradientStop x:Name="Player1Color2" Offset="0.4" Color="#1c1b21" />
+                    <GradientStop x:Name="Player1Color3" Offset="1.5" Color="#090a0c" />
+                </LinearGradientBrush>
+            </Grid.Background>
+
+            <Label
+                x:Name="MensagemRIP1"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Margin="20,0,0,0"
+                FontSize="Title"
+                IsVisible="false"
+                Text="RIP!"
+                TextColor="White" />
+
+            <Frame
+                Grid.Row="0"
+                Grid.Column="2"
+                Margin="0,35,0,0"
+                Padding="0"
+                BackgroundColor="Transparent"
+                BorderColor="Transparent"
+                CornerRadius="100"
+                HeightRequest="50"
+                WidthRequest="50">
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="BtnSelecionarTipo1" />
+                </Frame.GestureRecognizers>
+                <Image x:Name="SelecionarTipoImg1" Source="selecionar_tipoligth" />
+            </Frame>
+
+            <ImageButton
+                x:Name="btnAdicionar1"
+                Grid.Row="1"
+                Grid.Column="0"
+                BackgroundColor="Transparent"
+                Clicked="BtnAdicionar1"
+                HeightRequest="75"
+                Source="icone_adicionar_white"
+                VerticalOptions="Center"
+                WidthRequest="75" />
+
+            <Label
+                x:Name="Contador1"
+                Grid.Row="1"
+                Grid.Column="1"
+                FontAttributes="Bold"
+                FontSize="70"
+                HorizontalTextAlignment="Center"
+                Text="20"
+                TextColor="White"
+                VerticalTextAlignment="Center" />
+
+            <ImageButton
+                x:Name="btnDiminuir1"
+                Grid.Row="1"
+                Grid.Column="2"
+                BackgroundColor="Transparent"
+                Clicked="BtnRemover1"
+                HeightRequest="75"
+                Source="icone_reduzir_white"
+                VerticalOptions="Center"
+                WidthRequest="75" />
+
+            <Grid
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"
+                ColumnDefinitions="*,*,*,*,*"
+                RowDefinitions="*">
+
+                <Frame
+                    x:Name="FrameCoracao1"
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Padding="0"
+                    BackgroundColor="Transparent"
+                    BorderColor="White">
+                    <ImageButton
+                        x:Name="Coracao1"
+                        Clicked="BtnAcionarVida1"
+                        Source="heart_white"
+                        WidthRequest="35" />
+                </Frame>
+
+                <Frame
+                    x:Name="FrameVeneno1"
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    Padding="0"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent">
+                    <ImageButton
+                        x:Name="veneno1"
+                        Clicked="BtnAcionarVeneno1"
+                        Source="veneno_white"
+                        WidthRequest="50" />
+                </Frame>
+
+                <Frame
+                    x:Name="FrameRaio1"
+                    Grid.Row="0"
+                    Grid.Column="2"
+                    Padding="0"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent">
+                    <ImageButton
+                        x:Name="Raio1"
+                        Clicked="BtnacionarEnergy1"
+                        Source="lightning_white"
+                        WidthRequest="25" />
+                </Frame>
+
+                <Frame
+                    x:Name="FrameCommander1"
+                    Grid.Row="0"
+                    Grid.Column="3"
+                    Padding="0"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent">
+                    <ImageButton
+                        x:Name="Commander1"
+                        Clicked="BtnAcionarCommander1"
+                        Source="commander_white"
+                        WidthRequest="45" />
+                </Frame>
+
+                <Frame
+                    x:Name="FramePlanesWalker1"
+                    Grid.Row="0"
+                    Grid.Column="4"
+                    Padding="0"
+                    BackgroundColor="Transparent"
+                    BorderColor="Transparent">
+                    <ImageButton
+                        x:Name="PlanesWalker1"
+                        Clicked="BtnAcionarPlanesWalker1"
+                        Source="planeswalker_white"
+                        WidthRequest="55" />
+                </Frame>
+            </Grid>
+        </Grid>
+    </Grid>
+</ContentPage>

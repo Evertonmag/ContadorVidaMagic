@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage
+    x:Class="ContadorVidaMagic.Mobile.Telas.Popups.ConfiguracaoPopup"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:animations="clr-namespace:Mopups.Animations;assembly=Mopups"
+    xmlns:pages="clr-namespace:Mopups.Pages;assembly=Mopups"
+    Title="ConfiguracaoPopup"
+    BackgroundColor="#80000000"
+    CloseWhenBackgroundIsClicked="False">
+
+
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation
+            DurationIn="400"
+            DurationOut="300"
+            EasingIn="SinOut"
+            EasingOut="SinIn"
+            HasBackgroundAnimation="True"
+            PositionIn="Center"
+            PositionOut="Center"
+            ScaleIn="1.2"
+            ScaleOut="0.8" />
+    </pages:PopupPage.Animation>
+
+    <Frame
+        Margin="25,0"
+        BackgroundColor="#21282F"
+        BorderColor="Transparent"
+        CornerRadius="10"
+        HasShadow="True"
+        HorizontalOptions="Center"
+        VerticalOptions="Center">
+        <StackLayout>
+            <Label
+                HorizontalOptions="Center"
+                Style="{StaticResource tituloLabel}"
+                Text="Trocar quantidade de vida" />
+            <Label
+                HorizontalOptions="Center"
+                Style="{StaticResource descricaoLabel}"
+                Text="Informe a nova quantidade de vida" />
+            <Frame
+                Margin="0,10"
+                Padding="10,1"
+                CornerRadius="20">
+                <Entry
+                    x:Name="ValorVida"
+                    Keyboard="Numeric"
+                    TextColor="#000" />
+            </Frame>
+            <StackLayout Orientation="Horizontal">
+                <Button
+                    Margin="20,10,0,0"
+                    Clicked="FecharPopupClicked"
+                    HorizontalOptions="Center"
+                    Text="Cancelar"
+                    VerticalOptions="End" />
+                <Button
+                    Margin="20,10,0,0"
+                    Clicked="TrocarMinimoVidaClicked"
+                    HorizontalOptions="Center"
+                    Text="Ok" />
+            </StackLayout>
+        </StackLayout>
+    </Frame>
+
+
+</pages:PopupPage>
