@@ -44,7 +44,7 @@
                 <Frame.GestureRecognizers>
                     <TapGestureRecognizer Tapped="BtnSelecionarTipo2" />
                 </Frame.GestureRecognizers>
-                <Image x:Name="SelecionarTipoImg2" Source="selecionar_tipodark" />
+                <Image x:Name="SelecionarTipoImg2" Source="selecionar_tipo_black" />
             </Frame>
 
             <ImageButton
@@ -233,7 +233,7 @@
                 <Frame.GestureRecognizers>
                     <TapGestureRecognizer Tapped="BtnSelecionarTipo1" />
                 </Frame.GestureRecognizers>
-                <Image x:Name="SelecionarTipoImg1" Source="selecionar_tipoligth" />
+                <Image x:Name="SelecionarTipoImg1" Source="selecionar_tipo_white" />
             </Frame>
 
             <ImageButton
