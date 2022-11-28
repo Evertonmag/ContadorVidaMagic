@@ -26,13 +26,9 @@ Na parte superior temos um botão para voce escoler a cor representante do seu d
 
 ![Imagem representando a seleção de tipo](images/selecionarTipo.png)
 
----
-
 Ao clicar nele irá abrir as opções para a sua escolha:
 
 ![Imagem representando as opções para o usuario](images/opcoesTipo.png)
-
----
 
 Ao selecionar uma a tela irá mudar de acordo com o escolhido:
 
