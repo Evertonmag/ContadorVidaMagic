@@ -22,7 +22,7 @@
             ScaleOut="0.8" />
     </pages:PopupPage.Animation>
 
-    <Grid
+    <!--<Grid
         x:Name="selecionarCores"
         ColumnDefinitions="*,*,*"
         HorizontalOptions="Center"
@@ -79,6 +79,79 @@
         <Frame
             Grid.Row="1"
             Grid.Column="1"
+            Padding="0"
+            BackgroundColor="#fa5454"
+            BorderColor="Transparent"
+            CornerRadius="50">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="CorVermelhoSelecionado" />
+            </Frame.GestureRecognizers>
+            <Image Source="icone_terreno_vermelho" WidthRequest="100" />
+        </Frame>
+    </Grid>-->
+
+    <Grid
+        x:Name="selecionarCores"
+        ColumnDefinitions="*,*,*,*,*,*"
+        HorizontalOptions="Center"
+        RowDefinitions="*,*"
+        VerticalOptions="Center">
+        <Frame
+            Grid.Row="0"
+            Grid.Column="0"
+            Grid.ColumnSpan="2"
+            Padding="0"
+            BackgroundColor="#ffffd4"
+            BorderColor="Transparent"
+            CornerRadius="50">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="CorBrancoSelecionado" />
+            </Frame.GestureRecognizers>
+            <Image Source="icone_terreno_branco" WidthRequest="100" />
+        </Frame>
+        <Frame
+            Grid.Row="0"
+            Grid.Column="2"
+            Grid.ColumnSpan="2"
+            Padding="0"
+            BackgroundColor="#848484"
+            BorderColor="Transparent"
+            CornerRadius="50">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="CorPretoSelecionado" />
+            </Frame.GestureRecognizers>
+            <Image Source="icone_terreno_preto" WidthRequest="100" />
+        </Frame>
+        <Frame
+            Grid.Row="0"
+            Grid.Column="4"
+            Grid.ColumnSpan="2"
+            Padding="0"
+            BackgroundColor="#27b56b"
+            BorderColor="Transparent"
+            CornerRadius="50">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="CorVerdeSelecionado" />
+            </Frame.GestureRecognizers>
+            <Image Source="icone_terreno_verde" WidthRequest="100" />
+        </Frame>
+        <Frame
+            Grid.Row="1"
+            Grid.Column="1"
+            Grid.ColumnSpan="2"
+            Padding="0"
+            BackgroundColor="#66c0f4"
+            BorderColor="Transparent"
+            CornerRadius="50">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer Tapped="CorAzulSelecionado" />
+            </Frame.GestureRecognizers>
+            <Image Source="icone_terreno_azul" WidthRequest="100" />
+        </Frame>
+        <Frame
+            Grid.Row="1"
+            Grid.Column="3"
+            Grid.ColumnSpan="2"
             Padding="0"
             BackgroundColor="#fa5454"
             BorderColor="Transparent"
