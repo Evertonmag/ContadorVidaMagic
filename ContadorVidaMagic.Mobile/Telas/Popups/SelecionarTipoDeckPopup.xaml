@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage
+    x:Class="ContadorVidaMagic.Mobile.Telas.Popups.SelecionarTipoDeckPopup"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:animations="clr-namespace:Mopups.Animations;assembly=Mopups"
+    xmlns:pages="clr-namespace:Mopups.Pages;assembly=Mopups"
+    Title="SelecionarTipoDeckPopup"
+    BackgroundColor="#80000000"
+    CloseWhenBackgroundIsClicked="False">
+
+    <pages:PopupPage.Animation>
+        <animations:ScaleAnimation
+            DurationIn="400"
+            DurationOut="300"
+            EasingIn="SinOut"
+            EasingOut="SinIn"
+            HasBackgroundAnimation="True"
+            PositionIn="Center"
+            PositionOut="Center"
+            ScaleIn="1.2"
+            ScaleOut="0.8" />
+    </pages:PopupPage.Animation>
+
+    <Frame
+        Margin="25,0"
+        BackgroundColor="#21282F"
+        BorderColor="Transparent"
+        CornerRadius="10"
+        HasShadow="True"
+        HorizontalOptions="Center"
+        VerticalOptions="Center">
+        <StackLayout>
+            <Button
+                Margin="0,10,0,0"
+                Clicked="SelecionarUmClicked"
+                HorizontalOptions="Center"
+                Text="Selecionar um tipo de deck" />
+            <Button
+                Margin="0,10,0,0"
+                Clicked="SelecionarDoisClicked"
+                HorizontalOptions="Center"
+                Text="Selecionar dois tipos de decks" />
+            <Button
+                Margin="0,10,0,0"
+                Clicked="SelecionarMaisDeTresClicked"
+                HorizontalOptions="Center"
+                Text="Selecionar tres ou mais tipos de decks" />
+            <Button
+                Margin="0,10,0,0"
+                Clicked="FecharPopupClicked"
+                HorizontalOptions="Center"
+                Text="Fechar" />
+        </StackLayout>
+    </Frame>
+</pages:PopupPage>

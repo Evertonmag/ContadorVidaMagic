@@ -93,6 +93,9 @@
 	  <Compile Update="Telas\Popups\AlertPopup.xaml.cs">
 	    <DependentUpon>AlertPopup.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Telas\Popups\SelecionarTipo2Popup.xaml.cs">
+	    <DependentUpon>SelecionarTipo2Popup.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -103,6 +106,12 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Telas\Popups\AlertPopup.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Telas\Popups\SelecionarTipoDeckPopup.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Telas\Popups\SelecionarTipo2Popup.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Telas\Popups\SelecionarTipoPopup.xaml">

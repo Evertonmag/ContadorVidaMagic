@@ -219,7 +219,7 @@ public partial class ContVida : ContentPage
     {
         if (MopupService.Instance.PopupStack.Count <= 0)
         {
-            await MopupService.Instance.PushAsync(new SelecionarTipoPopup());
+            await MopupService.Instance.PushAsync(new SelecionarTipoDeckPopup());
 
             MessagingCenter.Subscribe<string, TipoElemento>(string.Empty, "SelecionarTipoElemento1", (sender, args) =>
             {
@@ -255,6 +255,12 @@ public partial class ContVida : ContentPage
                         Player1Color1.Color = Color.FromArgb("#cd7744");
                         Player1Color2.Color = Color.FromArgb("#b62c19");
                         Player1Color3.Color = Color.FromArgb("#791b19");
+                        break;
+                    case TipoElemento.Azorius:
+                        tipoElemento1 = TipoElemento.Azorius;
+                        Player1Color1.Color = Color.FromArgb("#f3f5f2");
+                        Player1Color2.Color = Color.FromArgb("#e3d1b3");
+                        Player1Color3.Color = Color.FromArgb("#000080");
                         break;
                     default:
                         break;

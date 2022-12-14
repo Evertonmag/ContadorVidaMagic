@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <pages:PopupPage
-    x:Class="ContadorVidaMagic.Mobile.Telas.Popups.SelecionarTipoPopup"
+    x:Class="ContadorVidaMagic.Mobile.Telas.Popups.SelecionarTipo2Popup"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:animations="clr-namespace:Mopups.Animations;assembly=Mopups"
     xmlns:pages="clr-namespace:Mopups.Pages;assembly=Mopups"
-    Title="SelecionarTipoPopup"
+    Title="SelecionarTipo2Popup"
     BackgroundColor="#80000000"
     CloseWhenBackgroundIsClicked="False">
 
@@ -26,10 +26,21 @@
         x:Name="selecionarCores"
         ColumnDefinitions="*,*,*,*,*,*"
         HorizontalOptions="Center"
-        RowDefinitions="*,*"
+        RowDefinitions="*,*,*"
         VerticalOptions="Center">
         <Frame
+            x:Name="Cor1Slecionada"
             Grid.Row="0"
+            Grid.Column="3"
+            Grid.ColumnSpan="2"
+            Padding="0"
+            BackgroundColor="Transparent"
+            BorderColor="Transparent"
+            CornerRadius="50">
+            <Image x:Name="Imagem1Slecionada" WidthRequest="100" />
+        </Frame>
+        <Frame
+            Grid.Row="1"
             Grid.Column="0"
             Grid.ColumnSpan="2"
             Padding="0"
@@ -42,7 +53,7 @@
             <Image Source="icone_terreno_branco" WidthRequest="100" />
         </Frame>
         <Frame
-            Grid.Row="0"
+            Grid.Row="1"
             Grid.Column="2"
             Grid.ColumnSpan="2"
             Padding="0"
@@ -55,7 +66,7 @@
             <Image Source="icone_terreno_preto" WidthRequest="100" />
         </Frame>
         <Frame
-            Grid.Row="0"
+            Grid.Row="1"
             Grid.Column="4"
             Grid.ColumnSpan="2"
             Padding="0"
@@ -68,7 +79,7 @@
             <Image Source="icone_terreno_verde" WidthRequest="100" />
         </Frame>
         <Frame
-            Grid.Row="1"
+            Grid.Row="2"
             Grid.Column="1"
             Grid.ColumnSpan="2"
             Padding="0"
@@ -81,7 +92,7 @@
             <Image Source="icone_terreno_azul" WidthRequest="100" />
         </Frame>
         <Frame
-            Grid.Row="1"
+            Grid.Row="2"
             Grid.Column="3"
             Grid.ColumnSpan="2"
             Padding="0"
