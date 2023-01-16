@@ -22,11 +22,11 @@ O contador com os botões para aumentar e diminuir:
 
 ---
 
-Na parte superior temos um botão para voce escoler a cor representante do seu deck:
+Na parte superior temos um botão para voce escolher a cor representante do seu deck:
 
 ![Imagem representando a seleção de tipo](images/selecionarTipo.png)
 
-Ao clicar nele irá abrir as opções para a sua escolha:
+Ao clicar nele irá abrir as opções para a sua escolha da cor representante do seu deck:
 
 ![Imagem representando as opções para o usuario](images/opcoesTipo.png)
 
@@ -36,7 +36,7 @@ Ao selecionar uma a tela irá mudar de acordo com o escolhido:
 
 ---
 
-Na parte inferior temos uma seção com divisões para mudar o tipo de contador como exemplo podenso ser para contar marcador de veneno no player, marcador de energia, marcador de commander e marcador de Planes Walker:
+Na parte inferior temos uma seção com divisões para mudar o tipo de contador como por exemplo podendo ser utilizado para contar marcador de veneno no player, marcador de energia, marcador de commander e marcador de Planes Walker:
 
 ![Imagem mostrando a selecao de contadores diferentes](images/selecionarContador.png)
 
@@ -52,7 +52,7 @@ Na divisão das telas temos algumas funcionalidades extras.
 
 ![Imagem funcionalidade refresh](images/funcionalidadeRefresh.png)
 
-Esta Funcionalidade ter por finalidade reiniciar o jogo.
+Esta Funcionalidade tem por finalidade reiniciar o jogo.
 
 ---
 
@@ -60,7 +60,7 @@ Esta Funcionalidade ter por finalidade reiniciar o jogo.
 
 ![Imagem funcionalidade dados](images/funcionalidadeDados.png)
 
-Esta Funcionalidade ter por finalidade rodar dois dados d6 para função de ver quem jogará primeiro ou outras coisas que possa ser utilizado.
+Esta Funcionalidade tem por finalidade rodar dois dados d6 para função de ver quem jogará primeiro ou outras coisas semelhantes que possa ser utilizado.
 
 ![Imagem funcionalidade dados em ação](images/exemploDado.png)
 
@@ -70,7 +70,7 @@ Esta Funcionalidade ter por finalidade rodar dois dados d6 para função de ver 
 
 ![Imagem configurações](images/funcionalidaeConfiguracao.png)
 
-Esta Funcionalidade no momento tem somente uma configuração que é a quantia inicail de vida.
+Esta Funcionalidade no momento tem somente uma configuração que é modificar a quantia inicial de vida dos players.
 
 ![Imagem mostrando configurações pt1](images/trocandoVidaInicial.png)
 

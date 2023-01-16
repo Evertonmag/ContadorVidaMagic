@@ -71,6 +71,7 @@
                 FontSize="70"
                 HorizontalTextAlignment="Center"
                 Text="20"
+                TextColor="Black"
                 VerticalTextAlignment="Center" />
 
             <ImageButton

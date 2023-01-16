@@ -3,8 +3,6 @@
 	<PropertyGroup>
 		<TargetFrameworks>net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
 		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
-		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
-		<!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
 		<OutputType>Exe</OutputType>
 		<RootNamespace>ContadorVidaMagic.Mobile</RootNamespace>
 		<UseMaui>true</UseMaui>
@@ -12,7 +10,7 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 
 		<!-- Display name -->
-		<ApplicationTitle>ContVidaMagic</ApplicationTitle>
+		<ApplicationTitle>Count MTG</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.contadorvidamagic.mobile</ApplicationId>
@@ -35,7 +33,7 @@
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#907732" />
 
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#907732" />
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#907732" resize="true" BaseSize="256,512" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
